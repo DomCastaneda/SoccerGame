@@ -6,9 +6,9 @@ public class BlockController : MonoBehaviour
    private StatusController _statusController = null;
 
    //detect collisions between the GameObjects with Colliders attached
-   void OnCollisionEnter(Collision collision)
+   void OnTriggerEnter(Collider collider)
    {
-      if (_statusController.IsGamePlayActive() && collision.gameObject.name == "block")
+      if (_statusController.IsGamePlayActive() && collider.gameObject.name == "ball")
       {
          Debug.Log("You Died!");
          
