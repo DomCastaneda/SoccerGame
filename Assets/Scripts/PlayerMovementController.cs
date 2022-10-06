@@ -6,6 +6,8 @@ public class PlayerMovementController : MonoBehaviour
    public Rigidbody player;
    public Transform playerCamera;
 
+   public Animator animator;
+
    private float _throwKeyPressedStartTime;
    private Vector3 lastX, lastZ;
    private float inputHorX, inputVertY;
@@ -19,6 +21,8 @@ public class PlayerMovementController : MonoBehaviour
 
       if (!playerIdle) // skip sending extra zero vertors when player isn't moving
       {
+         animator.SetBool("isMoving", true);
+
          Vector3 playerMovementRotation = new Vector3(x, 0f, y) * maxSpeed;
 
          Vector3 camRotation = playerCamera.transform.forward;
@@ -39,6 +43,9 @@ public class PlayerMovementController : MonoBehaviour
          {
             WebSocketService.Instance.SendVelocity(roundedVelocity);
          }
+      }
+      else {
+         animator.SetBool("isMoving", false);
       }
    }
 
@@ -100,6 +107,8 @@ public class PlayerMovementController : MonoBehaviour
 
    void Start()
    {
+      animator = GetComponent<Animator>();
+
       // For now just hit this variable to create the singleton
       WebSocketService.Instance.init();
 
