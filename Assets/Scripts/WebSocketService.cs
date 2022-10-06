@@ -12,7 +12,7 @@ public class WebSocketService : Singleton<WebSocketService>
    private string matchId;
    private int playerMovementMessageSequence = 0;
    private WebSocket _websocket;
-   private string _webSocketDns = "wss://grzx27xh20.execute-api.us-west-2.amazonaws.com/demo";
+   private string _webSocketDns = "wss://qfty6p8zh7.execute-api.us-west-2.amazonaws.com/demo";
 
    public const string FirstToJoinOp = "0";
    public const string RequestStartOp = "1";
