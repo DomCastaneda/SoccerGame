@@ -13,7 +13,7 @@ public class PlayerMovementController : MonoBehaviour
    private float inputHorX, inputVertY;
    private bool firstZeroReceivedInARow = false;
    private bool playerIdle = false;
-   private float maxSpeed = 10;
+   private float maxSpeed = 7;
 
    private void PlayerMovement(float x, float y)
    {
