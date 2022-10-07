@@ -1,18 +1,3 @@
-## Notice
-This game follows BatteryAcid's Unity Multiplayer Movement Synchronization w/ AWS tutorial:
-
-https://www.youtube.com/watch?v=cMGLFkG1iDg&t=360s&ab_channel=BatteryAcid
-
-The game also contains contents from BatteryAcid's GitHub repositories:
-
-https://github.com/BatteryAcid/multiplayer-movement-sync-aws
-
-https://github.com/BatteryAcid/multiplayer-movement-sync-unity
-
-This game follows CloudScalr's blog post on Terraform and AWS:
-
-https://cloudscalr.com/github-actions-terraform-oidc/
-
 ## Game Overview
 Strikers is a 1v1 soccer minigame that showcases multiplayer synchronization functionality using AWS. The game allows players to compete in a practice soccer match against another and see each other's skills. The first player to score a goal using their unique soccer ball wins. Player's positions are logged onto the UI Canvas to confirm multiplayer synchronization.
 
@@ -31,3 +16,18 @@ This project uses a GitHub action to deploy with Terraform in AWS. To make it mo
 
 ## Stress Testing
 I attempted stress testing my backend code but unfortunately wasn't able to complete this portion of the game quest.
+
+## Notice
+This game follows BatteryAcid's Unity Multiplayer Movement Synchronization w/ AWS tutorial:
+
+https://www.youtube.com/watch?v=cMGLFkG1iDg&t=360s&ab_channel=BatteryAcid
+
+The game also contains contents from BatteryAcid's GitHub repositories:
+
+https://github.com/BatteryAcid/multiplayer-movement-sync-aws
+
+https://github.com/BatteryAcid/multiplayer-movement-sync-unity
+
+This game follows CloudScalr's blog post on Terraform and AWS:
+
+https://cloudscalr.com/github-actions-terraform-oidc/
